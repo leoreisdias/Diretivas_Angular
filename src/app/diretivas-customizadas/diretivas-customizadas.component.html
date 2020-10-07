@@ -1,5 +1,20 @@
+<h1>Diretivas Customizadas</h1>
+<br>
 <h3 FundoAmarelo>Diretivas Customizadas - ElementRef e Renderer</h3>
 <br>
 <h3 HighlightMouse>Text com Highlight ao passar o mouse (HostListener e HostBinding)</h3>
 <br>
 <h3 [FullHighlight]="'red'" [defaultColor]="'grey'">Text com Highlight com cores diferentes</h3>
+<br>
+
+<h3>Diretiva Estruturada Customizada: ngElse</h3>
+<div *ngIf="mostrarCursos">
+  Segredo MISTICO
+</div>
+
+<div *ngElse="mostrarCursos">
+  Segredo CIENTIFICO
+</div>
+
+<br>
+<button (click)="onMostrarCursos()">Mostrar/Esconder Segredo</button>
