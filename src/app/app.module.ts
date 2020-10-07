@@ -8,6 +8,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { FormsModule } from '@angular/forms';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     NgSwitchComponent,
     NgForComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    OperadorElvisComponent
   ],
   imports: [
     BrowserModule,
