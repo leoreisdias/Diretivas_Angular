@@ -6,6 +6,8 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     DiretivaNgifComponent,
     NgSwitchComponent,
     NgForComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgStyleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
