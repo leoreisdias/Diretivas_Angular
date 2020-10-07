@@ -1,0 +1,22 @@
+<h3>*NgIf</h3>
+
+<div *ngIf="cursos.length > 0">
+  Lista de Cursos
+</div>
+
+<div *ngIf="cursos.length == 0">
+  Não existem cursos para serem listados.
+</div>
+
+<div *ngIf="mostrarCursos">
+  SEGREDO
+</div>
+
+<br>
+<button (click)="onClickButton()">Mostrar/Esconder Segredo</button>
+
+<br>
+<h3>hidden como alternativa</h3>
+<div [hidden]="!mostrarCursos">
+  Como Property Binding: [hidden]="!mostrarCursos"
+</div>
